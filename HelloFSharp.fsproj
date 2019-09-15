@@ -50,6 +50,7 @@
     <Compile Include="Tutorial4.fs" />
     <Compile Include="Tutorial5.fs" />
     <Compile Include="Tutorial6.fs" />
+    <Compile Include="Tutorial7.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />

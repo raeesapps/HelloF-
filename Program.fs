@@ -8,6 +8,7 @@ open HelloFSharp.Tutorial3
 open HelloFSharp.Tutorial4
 open HelloFSharp.Tutorial5
 open HelloFSharp.Tutorial6
+open HelloFSharp.Tutorial7
 
 module Main =
     let mainTutorial1 _ =
@@ -45,9 +46,13 @@ module Main =
         printfn "%A" max
         0
        
-    [<EntryPoint>] 
     let mainTutorial6 _ =
         let number = 97
         Composition.applyAll number |> ignore
         0
-        
+    
+    [<EntryPoint>]
+    let mainTutorial7 _ =
+        let nums = [1..2]
+        ListMatching.listMatcher nums |> ignore
+        0
