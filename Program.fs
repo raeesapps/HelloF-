@@ -5,6 +5,8 @@ open System.IO
 open HelloFSharp.Tutorial1
 open HelloFSharp.Tutorial2
 open HelloFSharp.Tutorial3
+open HelloFSharp.Tutorial4
+open HelloFSharp.Tutorial4
 
 module Main =
     let mainTutorial1 _ =
@@ -19,7 +21,6 @@ module Main =
         printfn "%A" sortedNums
         0
     
-    [<EntryPoint>]
     let mainTutorial3 _ =
         let callback (reader:StreamReader) url =
             let html = reader.ReadToEnd()
@@ -30,4 +31,10 @@ module Main =
             "https://news.ycombinator.com"
             |> DownloadWebpage.fetchUrl callback
         printfn "%A" snapshotOfHackernews
+        0
+    
+    [<EntryPoint>]
+    let mainTutorial4 _ =
+        let circle = Circle 21
+        Renderer.draw circle
         0
