@@ -6,6 +6,7 @@ open HelloFSharp.Tutorial1
 open HelloFSharp.Tutorial2
 open HelloFSharp.Tutorial3
 open HelloFSharp.Tutorial4
+open HelloFSharp.Tutorial5
 
 module Main =
     let mainTutorial1 _ =
@@ -32,8 +33,14 @@ module Main =
         printfn "%A" snapshotOfHackernews
         0
     
-    [<EntryPoint>]
     let mainTutorial4 _ =
         let circle = Circle 21
         Renderer.draw circle
+        0
+    
+    [<EntryPoint>]
+    let mainTutorial5 _ =
+        let nums = [1..100]
+        let max = Max.findMax nums
+        printfn "%A" max
         0
