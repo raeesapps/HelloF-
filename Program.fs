@@ -7,6 +7,7 @@ open HelloFSharp.Tutorial2
 open HelloFSharp.Tutorial3
 open HelloFSharp.Tutorial4
 open HelloFSharp.Tutorial5
+open HelloFSharp.Tutorial6
 
 module Main =
     let mainTutorial1 _ =
@@ -38,9 +39,15 @@ module Main =
         Renderer.draw circle
         0
     
-    [<EntryPoint>]
     let mainTutorial5 _ =
         let nums = [1..100]
         let max = Max.findMax nums
         printfn "%A" max
         0
+       
+    [<EntryPoint>] 
+    let mainTutorial6 _ =
+        let number = 97
+        Composition.applyAll number |> ignore
+        0
+        
