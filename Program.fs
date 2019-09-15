@@ -6,7 +6,6 @@ open HelloFSharp.Tutorial1
 open HelloFSharp.Tutorial2
 open HelloFSharp.Tutorial3
 open HelloFSharp.Tutorial4
-open HelloFSharp.Tutorial4
 
 module Main =
     let mainTutorial1 _ =
